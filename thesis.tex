@@ -1,0 +1,50 @@
+\documentclass[a4paper, twoside, 12p]{memoir}
+
+\settypeblocksize{227mm}{140mm}{*}
+
+% Margins to 30mm.
+%\setlrmargins{*}{35mm}{*}
+%\setulmargins{*}{35mm}{*}
+
+% Top margins are always equal and 30mm because of typeblock.
+% The ration of side margins vary to an extent of 5%.
+\setlrmargins{*}{*}{0.95}
+\setulmargins{*}{*}{1}
+
+% Fonts.
+%\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}[Numbers=OldStyle, Ligatures=Common,  ]
+
+% Put page number in footer.
+\makeevenfoot{headings}{\thepage}{}{}
+\makeoddfoot{headings}{}{}{\thepage}
+\makeevenhead{headings}{}{}{}
+\makeoddhead{headings}{}{}{}
+
+% Final element!
+\checkandfixthelayout
+
+\begin{document}
+
+	Lorem ipsum sit amet
+
+	óüöéáúőűí
+
+	ÓÜÖÉÁÚŐŰÍ
+
+	ff fi Th ck ct st  tz ß
+
+	A \& h
+
+	0 1 2 3 4 5 6 7 8 9  1970
+
+	1/2 2/3 0/1
+
+	Quia?
+
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat non nunc et posuere. Nam enim felis, pharetra id eros pulvinar, venenatis viverra erat. Praesent dictum et ipsum eget tincidunt. Pellentesque ut urna in lorem auctor auctor eget sit amet  urna. Nunc eget enim quis nibh molestie tristique vel convallis eros. Mauris velit ex, gravida et lacus nec, lobortis luctus urna. Morbi commodo volutpat diam eget feugiat. Fusce viverra dignissim dui, eget feugiat nisi. Vestibulum iaculis sapien sit amet sagittis iaculis. Ut ac auctor erat. Sed in dolor libero. Phasellus commodo fringilla suscipit. In nec convallis ex, et auctor mi. Ut quis est nec velit posuere congue et at quam. Vestibulum tincidunt et ex sed lacinia. Morbi laoreet posuere aliquam.
+
+
+
+\end{document}
